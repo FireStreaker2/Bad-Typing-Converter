@@ -1,0 +1,28 @@
+{
+  "name": "bad-typing-converter",
+  "version": "1.0.0",
+  "description": "Convert your friend's badly typed sentence into something you can actually read!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FireStreaker2/Bad-Typing-Converter.git"
+  },
+  "keywords": [
+    "node.js",
+    "converter",
+    "FireStreaker2"
+  ],
+  "author": "FireStreaker2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FireStreaker2/Bad-Typing-Converter/issues"
+  },
+  "homepage": "https://github.com/FireStreaker2/Bad-Typing-Converter#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "openai": "^3.1.0"
+  }
+}
