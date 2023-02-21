@@ -23,12 +23,8 @@ A: im too lazy to have a different template/structure, cope
 ## Contributing
 If you would like to contribute, you can <a href='https://github.com/FireStreaker2/Bad-Typing-Converter/fork'>fork the repo</a> and <a href='https://github.com/FireStreaker2/Bad-Typing-Converter/compare'>make a PR</a>, or contact me via email @ ``suggestions@firestreaker2.gq``
 
-## TODO
-* make ajax request actually work    
-* make frontend a bit smoother    
-* host project & connect to a domain    
-* make sure api calls work     
-* display result from api calls onto frontend    
+## TODO  
+* host project & connect to a domain         
 * try not to leak my api keys    
 
 ## Credits

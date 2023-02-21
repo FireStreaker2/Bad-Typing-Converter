@@ -1,12 +1,36 @@
 const express = require('express');
+const bodyParser = require("body-parser");
+
 const app = express();
 const port = 3000;
+const { Configuration, OpenAIApi } = require("openai");
+
+const configuration = new Configuration({
+  apiKey: "",
+});
+const openai = new OpenAIApi(configuration);
+
+var jsonParser = bodyParser.json()
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.use(express.static('public'));
 
-app.post("/endpoint", function(req, res) {
-    console.log(req.body.value);
-    res.json({ recieved: true });
+app.post("/endpoint", urlencodedParser, async function (req, res) {
+  var query = req.body.query;
+
+  const response = await openai.createCompletion({
+    model: "text-curie-001",
+    prompt: "Can you help clarify my friend's badly typed sentence? " + query,
+    temperature: 0,
+    max_tokens: 100,
+    top_p: 1,
+    frequency_penalty: 0.0,
+    presence_penalty: 0.0,
+    stop: ["?"],
+  });
+
+  var clarified = response.data.choices[0].text;
+  res.send(clarified);
 })
 
 app.listen(port, () => {

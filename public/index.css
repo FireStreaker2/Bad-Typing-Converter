@@ -37,3 +37,9 @@ h1, p {
     padding: 0px;
     border: 1px solid #000;
 }
+
+#logo {
+    position: absolute;
+    left: 65%;
+    top: 0%;
+}
