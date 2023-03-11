@@ -3,7 +3,7 @@
 
 ## FAQ
 Q: Why did you make this?    
-A: i had nothing to do over break     
+A: i had nothing to do over my break     
 
 Q: How do I use this?   
 A: you dont, im still working on it    
@@ -26,6 +26,9 @@ If you would like to contribute, you can <a href='https://github.com/FireStreake
 ## TODO  
 * host project & connect to a domain         
 * try not to leak my api keys    
+* add a switcher between gpt-3 and gpt-2    
+* add an extra info and settings thing    
+* npm commands    
 
 ## Credits
 <a href="https://stackoverflow.com/">Stack Overflow</a>    

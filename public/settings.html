@@ -20,28 +20,26 @@
 
     <body>
         <div>
-            <h1>Bad Typing Converter</h1>
+            <h1>Bad Typing Converter Settings</h1>
 
-            <a id="settings" href="./settings.html">Settings</a>
+            <a id="settings" href="/">Home</a>
             
-            <p>Type in the left box to start, press the "->" button to conver it!</p>
-            </br>
-            <p>Made with low effort by <a href="https://github.com/FireStreaker2">FireStreaker2</a></a></p>
-            </br>
-            <p>Currently using: <a href="https://platform.openai.com/docs/models/gpt-3">text-curie-001</a></p>
+            <p>why are you even here</p>
 
             <img id="logo" src="./favicon.png"/>
         </div>
 
-        <div>
-            <textarea id="input">Enter poorly tpyed sentence here</textarea>
-            <button id="convert">-></button>
-            <div id="output">Output will appear here. (haha you cant type here)</div>
+        <div id="btn-container">
+            <button id="info" class="button">Extra Info</button>
+            <button id="ai-settings" class="button">AI Settings</button>
+            <button id="logs" class="button">Nerd Logs</button>
         </div>
+        
+        <div id="popup"></div>
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-        <script src="./transfer.js"></script>
+        <script src="./settings.js"></script>
 
     </body>
 </html>

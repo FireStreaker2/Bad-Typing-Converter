@@ -7,12 +7,14 @@ button.addEventListener("click", function(){
     var value = input.value.trim()
 
     $.post('/endpoint', {query: value}, function(response) {
-        const processedData = response; // store the response in a variable
-        console.log(processedData); // do something with the processed data
+        const processedData = response;
+        console.log(processedData);
         $(output).text(processedData);
+        localStorage.setItem("latest", processedData);
       })
       .fail(function(error) {
         console.error(error);
+        localStorage.setItem("Error", error);
       });
       
 });
